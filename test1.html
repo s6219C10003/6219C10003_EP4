@@ -4,9 +4,80 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="keywords" content="SAU IoT ........">
+    <meta name="description" content="SAU IoT in Thailand......">
+    <meta name="author" content="IoT Softtech 2021......">
+    <title>SAU in Thailand</title>
+    <link rel="shortcut icon" href="./images/images1.ico" type="image/x-icon">
 </head>
 <body>
-    
+    <h1>-- FORM TAG --</h1>     <!-- method ต้องเป็น GET/POST แต่ถ้ามีการ UPLOAD ต้องเป็น POST เท่านั่น -->
+    <form action="#" method="POST" enctype="multipart/form-data"> 
+    <strong>แบบฟอร์มลงทะเบียน</strong>
+        <br><br>
+        ชื่อพนักงาน : <input type="text" name="emp_name" id="">
+        <br><br>
+        เงินเดือน : <input type="text" name="emp_salalry" id="">บาท
+        <br><br>
+        น้ำหนัก : <input type="number" name="emp_weight" id="">กิโลกรัม
+        <br><br>
+        รหัสผ่าน : <input type="password" name="emp_password" id="">
+        <br><br>
+        หมายเหตุ : <textarea name="emp_note" id="" cols="30" rows="5"></textarea>
+        <br><br>
+        เลือกวันเกิด : <input type="date" name="emp_bday" id="">
+        <br><br>
+        เลือกเวลาเกิด : <input type="time" name="emp_btime" id="">
+        <br><br>
+        วันเวลาเข้าทำงาน : <input type="datetime-local" name="emp_income" id="">
+        <br><br>
+        การศึกษาสูงสุด : 
+        <select name="emp_major" id="">
+            <option value="">ประถม</option>
+            <option value="">มัธยม</option>
+            <option value="">ป.ตรี</option>
+            <option value="">ป.โท</option>
+            <option value="">ป.เอก</option>
+        </select>
+        <br><br>
+        สาขาวิชาที่จบ : <!-- List (เลือกได้แค่ 1)-->
+        <select name="emp_major" id="" size="4">
+            <option value="1">IoT</option>
+            <option value="2">ComSci</option>
+            <option value="3">Elec</option>
+            <option value="4">Law</option>
+            <option value="5">Account</option>
+        </select>
+        <br><br>
+        อาหารที่ชอบ : <!-- List (เลือกได้มากกว่า 1)-->
+        <select name="emp_major" id="" size="4" multiple>
+            <option value="1">ข้าวมันไก่</option>
+            <option value="2">กาแฟ</option>
+            <option value="3">นม</option>
+            <option value="4">ชา</option>
+            <option value="5">ผลไม้</option>
+        </select>
+        <br><br>
+        เพศ :    <!-- ต้องเลือก และเลือกได้แค่ 1 -->
+        <input type="radio" name="emp_sex" id=""checked value="1">ชาย
+        <input type="radio" name="emp_sex" id="" value="2">หญิง
+        <input type="radio" name="emp_sex" id="" value="3">ทางเลือก
+        <br><br>
+        งานอดิเรก : <!-- เลือกหรือไม่เลือกก็ได้ แและเลือกได้มากกว่า 1 -->
+        <input type="checkbox" name="emp_jop1" id="" value="1">เล่นดนตรี
+        <input type="checkbox" name="emp_jop2" id="" value="2">เล่นกีฬา
+        <input type="checkbox" name="emp_jop3" id="" value="3">เขียนหนังสือ
+        <input type="checkbox" name="emp_jop4" id="" value="4">เที่ยว
+        <input type="checkbox" name="emp_jop5" id="" value="5">กิน
+        <br><br>
+        เลือกรูป (หรือเลือกไฟล์ต่างๆ) : 
+        <input type="file" name="emp_images" id="" accept="image/">
+        <br><br>
+        <input type="submit" value="ตกลง">
+        <input type="reset" value="ยกเลิก">
+        <button>ตกลง</button>
+        <button>ยกเลิก</button>
+
+    </form>
 </body>
 </html>
